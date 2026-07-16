@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7b0e4af78b5859b4a9871776f4b5e488
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - iconSprite: {fileID: 21300000, guid: 2da423b3d8ea0d846bcf5beed194ac2c, type: 3}
+  - targetCanvas: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
