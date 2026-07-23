@@ -176,7 +176,7 @@ MonoBehaviour:
   currentViewMode: 0
   viewDistanceMin: 500000
   viewDistanceMax: 1e+12
-  cameraDamperRate: 17
+  cameraDamperRate: 10
   translateThreshold: 1
   baseRotor: {fileID: 52017075}
   targetRotor: {fileID: 1885277176}
@@ -304,13 +304,13 @@ MonoBehaviour:
   - timeWarp: 10000
     dt: 1
   - timeWarp: 50000
-    dt: 1
+    dt: 5
   - timeWarp: 100000
     dt: 10
   - timeWarp: 500000
     dt: 10
   - timeWarp: 1000000
-    dt: 20
+    dt: 10
   - timeWarp: 5000000
     dt: 100
   - timeWarp: 10000000
@@ -2430,7 +2430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846615111b587194ba153066dd7747f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 3
+  thrust: 10
   finalThrust: 0
   debugArrow: {fileID: 1184037080}
 --- !u!1 &1238351143
@@ -2841,7 +2841,7 @@ MonoBehaviour:
   viewScale: 1
   centralStartColor: {r: 1, g: 0, b: 0, a: 1}
   centralEndColor: {r: 1, g: 0, b: 0, a: 1}
-  maxHistory: 5000
+  maxHistory: 10
   lineWidth: 2
   areaThreshold: 200
   LineCamera: {fileID: 551079600}

@@ -48,8 +48,13 @@ public class GROrbitPrediction : MonoBehaviour
     void LateUpdate()
     {
         int count = managedObjects.Count;
-        if (count == 0) return;
+        if (count == 0 || !enablePrediction) return;
 
+        RunPrediction(count);
+    }
+
+    void RunPrediction(int count)
+    {
         double currentRealTime = GRPhysicsEngine.Instance.globalTime;
 
         // 检测运行时是否有更改这些数值，如果被改的话需要把预测线列表进行重置，否则直接覆写会出bug
@@ -198,7 +203,7 @@ public struct GRPredictionJob : IJob
 
         // 2. Newton-Raphson Corrector
         double tolerance = 1e-13;
-        for (int iter = 0; iter < 10; iter++)
+        for (int iter = 0; iter < 5; iter++)
         {
             double4 y_mid = (y_n + y_next) * 0.5;
 

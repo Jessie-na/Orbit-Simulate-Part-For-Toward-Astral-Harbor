@@ -39,8 +39,8 @@ public class InfoUI : MonoBehaviour
     
     void UpdateVelocity()
     {
-        float u = math.length((float2)GRPO.u);
-        velocityUI.text = $"Velocity: {u:F3}";
+        float dxdt = math.length((float2)GRPO.dxdt);
+        velocityUI.text = $"Velocity: {dxdt:F3}";
     }
     void UpdateRadialHeight()
     {
